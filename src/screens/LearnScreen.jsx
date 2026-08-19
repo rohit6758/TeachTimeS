@@ -28,7 +28,7 @@ export default function LearnScreen() {
       </div>
 
       {/* Main Feature Cards */}
-      <div className="mt-6 flex-col gap-3">
+      <div className="mt-6 responsive-grid-2">
         <div className="card flex items-center justify-between" style={{ cursor: 'pointer', background: 'linear-gradient(135deg, #f0fbff 0%, #ffffff 100%)' }}>
           <div className="flex-col gap-1">
             <div style={{ background: '#bdf1ff', width: 40, height: 40, borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8 }}>
@@ -88,7 +88,7 @@ export default function LearnScreen() {
         </div>
 
         <div className="mt-4 text-xs font-semibold text-muted" style={{ letterSpacing: 1 }}>SELECT BRANCH</div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginTop: 12 }}>
+        <div className="responsive-grid-4" style={{ marginTop: 12 }}>
           <div className="card flex-col items-center justify-center gap-2" style={{ padding: '16px 8px', border: '2px solid var(--primary)', background: '#f5fbff' }}>
             <Monitor size={24} color="var(--primary)" />
             <div className="text-sm font-semibold" style={{ color: 'var(--primary)', textAlign: 'center' }}>Computer Science</div>

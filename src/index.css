@@ -41,11 +41,9 @@ body {
 
 .app-container {
   width: 100%;
-  max-width: 480px; /* Mobile width restriction for laptop view */
   background-color: var(--surface);
   min-height: 100vh;
   position: relative;
-  box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
 }
@@ -186,3 +184,34 @@ body {
   align-items: center;
   gap: 8px;
 }
+
+/* Responsive Grid Classes */
+.responsive-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.responsive-grid-2 { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.responsive-grid-3 { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.responsive-grid-4 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.page-container { max-width: 1200px; margin: 0 auto; width: 100%; }
+
+/* Desktop Navigation overrides */
+.desktop-nav { display: none; }
+.mobile-nav-only { display: flex; }
+
+@media (min-width: 768px) {
+  .responsive-grid { grid-template-columns: repeat(2, 1fr); }
+  .responsive-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .responsive-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .responsive-grid-4 { grid-template-columns: repeat(4, 1fr); }
+  
+  .content-area { padding-bottom: 0; }
+  .bottom-nav { display: none; }
+  
+  .desktop-nav { display: flex; gap: 24px; }
+  .mobile-nav-only { display: none; }
+  
+  .nav-item { width: auto; height: auto; flex-direction: row; gap: 8px; font-size: 14px; }
+  .nav-item .icon-container { background: transparent !important; padding: 0 !important; }
+  
+  .header-top { padding: 16px 32px; border-bottom: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+  .p-5 { padding: 32px; }
+}
+
