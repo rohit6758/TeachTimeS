@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#0369a1"/>
+  <!-- Cap Top -->
+  <polygon points="256,128 96,208 256,288 416,208" fill="#e0f2fe"/>
+  <!-- Cap Base -->
+  <path d="M144,248v96c0,48 56,80 112,80c56,0 112,-32 112,-80v-96l-112,56L144,248z" fill="#ffffff"/>
+  <!-- Tassel String -->
+  <line x1="256" y1="208" x2="400" y2="240" stroke="#003366" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="256" cy="208" r="20" fill="#003366"/>
+  <!-- Tassel Bottom -->
+  <path d="M388,238l-16,80h56l-16,-80z" fill="#003366"/>
+  <circle cx="400" cy="326" r="16" fill="#003366"/>
+</svg>
